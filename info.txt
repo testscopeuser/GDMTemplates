@@ -1,0 +1,2 @@
+1) These are GDM templates which are used in automation tests for Google Cloud Connector for CMP.
+2) Please DONOT change any template.
