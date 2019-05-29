@@ -1,0 +1,17 @@
+resources:
+- name: newNetwork01
+  type: compute.v1.network
+  properties:
+      autoCreateSubnetworks: false
+- name: subNet01
+  type: compute.v1.subnetwork
+  properties:
+    network: $(ref.newNetwork01.selfLink)
+    region: us-west1
+    ipCidrRange: 192.168.10.0/24
+- name: subNet02
+  type: compute.v1.subnetwork
+  properties:
+    network: $(ref.newNetwork01.selfLink)
+    region: us-west1
+    ipCidrRange: 192.168.20.0/24
