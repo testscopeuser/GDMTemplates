@@ -6,12 +6,12 @@ resources:
 - name: subnet01
   type: compute.v1.subnetwork
   properties:
-    network: $(ref.newNetwork01.selfLink)
+    network: $(ref.newnetwork01.selfLink)
     region: us-west1
     ipCidrRange: 192.168.10.0/24
 - name: subnet02
   type: compute.v1.subnetwork
   properties:
-    network: $(ref.newNetwork01.selfLink)
+    network: $(ref.newnetwork01.selfLink)
     region: us-west1
     ipCidrRange: 192.168.20.0/24
